@@ -446,6 +446,78 @@
                 });
         }
 
+        const MATCHDATA_ENDPOINT = '/api/matchdata';
+        const MATCHDATA_STUB_URL = 'stubs/matchdata.json';
+
+        function createEmptyMatchData() {
+            return {
+                game_number: 0,
+                game_duration: '00:00',
+                winmatches: 'none',
+                teamdata: {
+                    blueteam: { teamname: 'BLUE TEAM', score: 0, totalgold: 0, turret: 0, lord: 0, turtle: 0, playerlist: [] },
+                    redteam: { teamname: 'RED TEAM', score: 0, totalgold: 0, turret: 0, lord: 0, turtle: 0, playerlist: [] }
+                }
+            };
+        }
+
+        function isValidTeamBlock(team) {
+            return !!team && typeof team === 'object' && Array.isArray(team.playerlist);
+        }
+
+        function isValidMatchDataPayload(payload) {
+            if (!payload || typeof payload !== 'object') return false;
+            if (!payload.teamdata || typeof payload.teamdata !== 'object') return false;
+            const { blueteam, redteam } = payload.teamdata;
+            return isValidTeamBlock(blueteam) && isValidTeamBlock(redteam);
+        }
+
+        function loadStubMatchData(reason) {
+            if (reason) {
+                console.info(`[MatchDataFallback] ${reason}`);
+            }
+            return fetch(MATCHDATA_STUB_URL)
+                .then(response => {
+                    if (!response.ok) {
+                        console.warn(`[FallbackUnavailable] ${MATCHDATA_STUB_URL} responded with status ${response.status}`);
+                        return createEmptyMatchData();
+                    }
+                    return response.json();
+                })
+                .then(stubData => {
+                    if (!isValidMatchDataPayload(stubData)) {
+                        console.warn('[FallbackInvalid] Stub payload missing required teamdata; using empty template.');
+                        return createEmptyMatchData();
+                    }
+                    return stubData;
+                })
+                .catch(err => {
+                    console.error(`[FallbackError] Failed to load ${MATCHDATA_STUB_URL}`, err);
+                    return createEmptyMatchData();
+                });
+        }
+
+        function loadMatchData() {
+            return fetch(MATCHDATA_ENDPOINT)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(apiData => {
+                    if (!isValidMatchDataPayload(apiData)) {
+                        console.warn('[MatchData] API payload invalid; falling back to stub data.');
+                        return loadStubMatchData('API payload invalid; loading stub payload.');
+                    }
+                    return apiData;
+                })
+                .catch(err => {
+                    console.warn('[MatchData] Failed to load from API; attempting stub.', err);
+                    return loadStubMatchData(`API request failed (${err.message || err}). Loading stub payload.`);
+                });
+        }
+
         const ws = new WebSocket(`ws://${window.location.host}`);
         ws.addEventListener('open', () => console.info(`[WS] Connected to ${ws.url}`));
         ws.addEventListener('error', (event) => console.error(`[WS] Error on ${ws.url}`, event));
@@ -454,18 +526,7 @@
         });
 
         Promise.all([
-            fetchJsonOrDefault('/api/matchdata', () => {
-                console.warn('[Fallback] Using empty match data because /api/matchdata is unavailable.');
-                return {
-                    game_number: 0,
-                    game_duration: '00:00',
-                    winmatches: 'none',
-                    teamdata: {
-                        blueteam: { teamname: 'BLUE TEAM', score: 0, totalgold: 0, turret: 0, lord: 0, turtle: 0, playerlist: [] },
-                        redteam: { teamname: 'RED TEAM', score: 0, totalgold: 0, turret: 0, lord: 0, turtle: 0, playerlist: [] }
-                    }
-                };
-            }, 'stubs/matchdata.json'),
+            loadMatchData(),
             fetchJsonOrDefault('/api/items', () => {
                 console.warn('[Fallback] Using minimal item list because /api/items is unavailable.');
                 return ["winter_truncheon", "immortality"];
