@@ -1,18 +1,32 @@
 // Variabel global untuk menyimpan status data terakhir (Dirty Check)
 let lastDataState = "";
 
+const ASSET_DIRECTORIES = {
+    item: 'Assets/Itemandspell',
+    spell: 'Assets/Itemandspell',
+    hero: 'Assets/HeroPick'
+};
+
+function slugifyAssetName(name) {
+    if (!name) return '';
+    return name
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/["`’']/g, '')
+        .replace(/[^a-zA-Z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+        .toLowerCase();
+}
+
 // Fungsi untuk mendapatkan path gambar
 function getImagePath(name, type) {
     if (!name || name === "idle" || name === "") return "";
-    
-    if (type === 'item') {
-        return `Assets/Itemandspell/${name}.png`;
-    } else if (type === 'spell') {
-        return `Assets/Itemandspell/${name}.png`;
-    } else if (type === 'hero') {
-        return `Assets/HeroPick/${name}.png`;
-    }
-    return "";
+
+    const directory = ASSET_DIRECTORIES[type];
+    if (!directory) return "";
+    const slug = slugifyAssetName(name);
+    if (!slug) return "";
+    return `${directory}/${slug}.png`;
 }
 
 // Fungsi helper untuk menangani Logo (Termasuk Fallback jika error)

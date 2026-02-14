@@ -1,3 +1,14 @@
+function slugifyAssetName(name) {
+    if (!name) return '';
+    return name
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/["`’']/g, '')
+        .replace(/[^a-zA-Z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '')
+        .toLowerCase();
+}
+
 function fetchData() {
     // Mengambil data dari file JSON yang memuat struktur teamdata
     fetch('/database/matchdatateam.json')
@@ -13,7 +24,7 @@ function fetchData() {
                 // 1. Update Gambar Hero (Blue Side: ID image-display-1 sampai 5)
                 const heroImg = document.getElementById(`image-display-${i + 1}`);
                 // Jika hero kosong/string kosong, gunakan 'idle' atau gambar default
-                const heroName = playerData.hero ? playerData.hero : 'idle';
+                const heroName = playerData.hero ? slugifyAssetName(playerData.hero) : 'idle';
                 if (heroImg) {
                     heroImg.src = `Assets/HeroPick/${heroName}.png`;
                 }
@@ -30,7 +41,7 @@ function fetchData() {
                         
                         if (itemDiv) {
                             // Set background image
-                            const finalItemName = itemName ? itemName : 'idle';
+                            const finalItemName = itemName ? slugifyAssetName(itemName) : 'idle';
                             itemDiv.style.backgroundImage = `url('Assets/Itemandspell/${finalItemName}.png')`;
                         }
                     }
@@ -46,7 +57,7 @@ function fetchData() {
 
                 // 1. Update Gambar Hero (Red Side: ID image-display-6 sampai 10)
                 const heroImg = document.getElementById(`image-display-${i + 6}`);
-                const heroName = playerData.hero ? playerData.hero : 'idle';
+                const heroName = playerData.hero ? slugifyAssetName(playerData.hero) : 'idle';
                 if (heroImg) {
                     heroImg.src = `Assets/HeroPick/${heroName}.png`;
                 }
@@ -59,7 +70,7 @@ function fetchData() {
                         const itemName = playerData.itemlist[j];
                         
                         if (itemDiv) {
-                            const finalItemName = itemName ? itemName : 'idle';
+                            const finalItemName = itemName ? slugifyAssetName(itemName) : 'idle';
                             itemDiv.style.backgroundImage = `url('Assets/Itemandspell/${finalItemName}.png')`;
                         }
                     }

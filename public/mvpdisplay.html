@@ -307,6 +307,31 @@
         const socket = new WebSocket(`ws://${window.location.host}`);
         const mainDisplay = document.getElementById('main-display');
 
+        const ASSET_DIRECTORIES = {
+            item: 'Assets/Itemandspell',
+            spell: 'Assets/Itemandspell'
+        };
+
+        function slugifyAssetName(name) {
+            if (!name) return '';
+            return name
+                .normalize('NFKD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/["`’']/g, '')
+                .replace(/[^a-zA-Z0-9]+/g, '_')
+                .replace(/^_+|_+$/g, '')
+                .toLowerCase();
+        }
+
+        function resolveAssetPath(type, name, fallback = '') {
+            if (!name) return fallback;
+            const directory = ASSET_DIRECTORIES[type];
+            if (!directory) return fallback;
+            const slug = slugifyAssetName(name);
+            if (!slug) return fallback;
+            return `${directory}/${slug}.png`;
+        }
+
         function fetchAndDisplayMvp() {
             fetch('/api/mvp')
                 .then(response => {
@@ -365,7 +390,7 @@
             spellContainer.innerHTML = '';
             if (mvpData.stats.SPELL) {
                 const img = document.createElement('img');
-                img.src = `Assets/Itemandspell/${mvpData.stats.SPELL}.png`;
+                img.src = resolveAssetPath('spell', mvpData.stats.SPELL);
                 img.onerror = () => img.style.display = 'none';
                 spellContainer.appendChild(img);
             }
@@ -377,7 +402,7 @@
                 const itemName = mvpData.stats[`ITEM ${i}`];
                 if(itemName) {
                     const img = document.createElement('img');
-                    img.src = `Assets/Itemandspell/${itemName}.png`;
+                    img.src = resolveAssetPath('item', itemName);
                     img.onerror = () => img.style.display = 'none';
                     box.appendChild(img);
                 }

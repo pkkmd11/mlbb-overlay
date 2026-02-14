@@ -374,6 +374,42 @@
         let resetStage = 0; 
         let resetTimeout;
 
+        const ASSET_DIRECTORIES = {
+            hero: 'Assets/HeroPick',
+            item: 'Assets/Itemandspell',
+            spell: 'Assets/Itemandspell',
+            player: 'Assets/player',
+            other: 'Assets/Other'
+        };
+
+        function slugifyAssetName(name) {
+            if (!name) return '';
+            return name
+                .normalize('NFKD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/["`’']/g, '')
+                .replace(/[^a-zA-Z0-9]+/g, '_')
+                .replace(/^_+|_+$/g, '')
+                .toLowerCase();
+        }
+
+        function resolveAssetPath(type, name, fallback = '') {
+            if (!name) return fallback;
+            const directory = ASSET_DIRECTORIES[type];
+            if (!directory) return fallback;
+            const slug = slugifyAssetName(name);
+            if (!slug) return fallback;
+            return `${directory}/${slug}.png`;
+        }
+
+        function attachAssetDiagnostics(imgEl, type, originalName) {
+            if (!imgEl) return;
+            imgEl.dataset.assetName = originalName || '';
+            imgEl.dataset.assetType = type || '';
+            imgEl.dataset.assetSlug = slugifyAssetName(originalName || '');
+            imgEl.dataset.assetPath = imgEl.src || '';
+        }
+
         function handleAssetError(assetType, assetName, imgEl, fallbackSrc = null) {
             const assetLabel = assetName ? `'${assetName}'` : '(unnamed asset)';
             const attemptedSrc = imgEl && imgEl.src ? imgEl.src : 'unknown source';
@@ -623,8 +659,9 @@
 
             players.forEach((p, index) => {
                 const tr = document.createElement('tr');
-                let heroSrc = 'Assets/HeroPick/idle.png';
-                if(p.hero && p.hero !== "") heroSrc = `Assets/HeroPick/${p.hero}.png`;
+                const heroSlug = p.hero ? slugifyAssetName(p.hero) : 'idle';
+                let heroSrc = resolveAssetPath('hero', heroSlug || 'idle', 'Assets/HeroPick/idle.png');
+                if (!heroSrc) heroSrc = 'Assets/HeroPick/idle.png';
 
                 tr.innerHTML = `
                     <td>
@@ -640,7 +677,7 @@
                     <td>
                         <div style="display:flex; justify-content:center;">
                             <div class="item-slot" onclick="openModal('${teamKey}', ${index}, 'spell')">
-                             <img src="Assets/Itemandspell/${p.spell || 'Execute'}.png" data-asset-name="${p.spell || 'Execute'}" data-asset-path="Assets/Itemandspell/${p.spell || 'Execute'}.png" onerror="handleAssetError('spell', this.dataset.assetName, this)">
+                             <img src="${resolveAssetPath('spell', p.spell || 'Execute')}" data-asset-name="${p.spell || 'Execute'}" data-asset-path="${resolveAssetPath('spell', p.spell || 'Execute')}" onerror="handleAssetError('spell', this.dataset.assetName, this, '${resolveAssetPath('spell', 'execute') || 'Assets/Itemandspell/execute.png'}')">
                             </div>
                         </div>
                     </td>
@@ -651,7 +688,7 @@
                                 <div class="item-slot ${!item || item === 'idle' ? 'empty-slot' : ''}" 
                                      onclick="openModal('${teamKey}', ${index}, 'item', ${iSlot})"
                                      title="${item}">
-                                     <img src="Assets/Itemandspell/${item}.png" data-asset-name="${item}" data-asset-path="Assets/Itemandspell/${item}.png" onerror="handleAssetError('item', this.dataset.assetName, this)">
+                                     <img src="${resolveAssetPath('item', item)}" data-asset-name="${item}" data-asset-path="${resolveAssetPath('item', item)}" onerror="handleAssetError('item', this.dataset.assetName, this, '${resolveAssetPath('item', 'idle') || 'Assets/Itemandspell/idle.png'}')">
                                 </div>
                             `).join('')}
                         </div>
@@ -757,10 +794,11 @@
 
             const filtered = itemList.filter(i => i.toLowerCase().includes(search.toLowerCase()));
             filtered.forEach(item => {
+                const sluggedPath = resolveAssetPath('item', item) || resolveAssetPath('item', 'idle');
                 const div = document.createElement('div');
                 div.className = 'grid-item';
                 div.innerHTML = `
-                    <img src="Assets/Itemandspell/${item}.png" data-asset-name="${item}" onerror="handleAssetError('item', this.dataset.assetName, this, 'Assets/Other/no-image.png')">
+                    <img src="${sluggedPath}" data-asset-name="${item}" onerror="handleAssetError('item', this.dataset.assetName, this, '${resolveAssetPath('other', 'no-image') || 'Assets/Other/no-image.png'}')">
                     <span>${item}</span>
                 `;
                 div.onclick = () => selectItem(item);
@@ -795,11 +833,10 @@
                 currentMvpId = checkbox.id;
                 const p = matchData.teamdata[team].playerlist[index];
                 
-                let heroImg = 'Assets/HeroPick/idle.png';
-                if(p.hero && p.hero !== "") heroImg = `Assets/HeroPick/${p.hero}.png`;
+                const heroImg = resolveAssetPath('hero', p.hero || 'idle', 'Assets/HeroPick/idle.png');
 
-                const primaryPlayerImg = `Assets/player/${p.name}.png`;
-                const fallbackPlayerImg = `Assets/player/playertemp.png`;
+                const primaryPlayerImg = resolveAssetPath('player', p.name, 'Assets/player/playertemp.png');
+                const fallbackPlayerImg = 'Assets/player/playertemp.png';
 
                 checkImageExists(primaryPlayerImg, (exists) => {
                     const finalPlayerImg = exists ? primaryPlayerImg : fallbackPlayerImg;

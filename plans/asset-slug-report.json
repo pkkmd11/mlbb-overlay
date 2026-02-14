@@ -1,0 +1,1058 @@
+﻿[
+    {
+        "relativePath":  "Assets\\costum\\Theme\\Anton.ttf",
+        "suggestedSlug":  "anton.ttf",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\costum\\Theme\\bg2 (2).png",
+        "suggestedSlug":  "bg2_2.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\costum\\Theme\\Bison.ttf",
+        "suggestedSlug":  "bison.ttf",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\costum\\Theme\\FalseLogoWhite.png",
+        "suggestedSlug":  "falselogowhite.png",
+        "collisionWith":  [
+                              "Assets\\nationalflag\\FalseLogoWhite.png",
+                              "Assets\\Other\\FalseLogoWhite.png"
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\costum\\Theme\\Gobold.otf",
+        "suggestedSlug":  "gobold.otf",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\costum\\Theme\\Renegade Pursuit.otf",
+        "suggestedSlug":  "renegade_pursuit.otf",
+        "collisionWith":  "Assets\\Font\\Renegade Pursuit.otf"
+    },
+    {
+        "relativePath":  "Assets\\Font\\Renegade Pursuit.otf",
+        "suggestedSlug":  "renegade_pursuit.otf",
+        "collisionWith":  "Assets\\costum\\Theme\\Renegade Pursuit.otf"
+    },
+    {
+        "relativePath":  "Assets\\Font\\Sentinel_Type_Freefont_EULA.txt",
+        "suggestedSlug":  "sentinel_type_freefont_eula.txt",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\HeroPick\\chang\u0027e.png",
+        "suggestedSlug":  "chang_e.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\HeroPick\\lapu lapu.png",
+        "suggestedSlug":  "lapu_lapu.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Aegis.png",
+        "suggestedSlug":  "aegis.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Allow Throw.png",
+        "suggestedSlug":  "allow_throw.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Antique Cuirass.png",
+        "suggestedSlug":  "antique_cuirass.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Arcane Boots.png",
+        "suggestedSlug":  "arcane_boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Ares Belt.png",
+        "suggestedSlug":  "ares_belt.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Arrival.png",
+        "suggestedSlug":  "arrival.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Athenas Shield.png",
+        "suggestedSlug":  "athenas_shield.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Azure Blade.png",
+        "suggestedSlug":  "azure_blade.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Berserkers Fury.png",
+        "suggestedSlug":  "berserkers_fury.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Black Ice Shield.png",
+        "suggestedSlug":  "black_ice_shield.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Blade Armor.png",
+        "suggestedSlug":  "blade_armor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Blade Of Despair.png",
+        "suggestedSlug":  "blade_of_despair.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Blade of the Heptaseas.png",
+        "suggestedSlug":  "blade_of_the_heptaseas.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Blood Wings.png",
+        "suggestedSlug":  "blood_wings.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Bloody_Retributio.png",
+        "suggestedSlug":  "bloody_retributio.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Book of Sages.png",
+        "suggestedSlug":  "book_of_sages.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Boots.png",
+        "suggestedSlug":  "boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Brute Force Breastplate.png",
+        "suggestedSlug":  "brute_force_breastplate.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Chastise Pauldron.png",
+        "suggestedSlug":  "chastise_pauldron.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Clock of Destiny.png",
+        "suggestedSlug":  "clock_of_destiny.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Conceal.png",
+        "suggestedSlug":  "conceal.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Concentrated Energy.png",
+        "suggestedSlug":  "concentrated_energy.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Corrosion Scythe.png",
+        "suggestedSlug":  "corrosion_scythe.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Cursed Helmet.png",
+        "suggestedSlug":  "cursed_helmet.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Dagger.png",
+        "suggestedSlug":  "dagger.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Demon Hunter Sword.png",
+        "suggestedSlug":  "demon_hunter_sword.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Demon Shoes.png",
+        "suggestedSlug":  "demon_shoes.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Dire Hit .png",
+        "suggestedSlug":  "dire_hit.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Divine Glaive.png",
+        "suggestedSlug":  "divine_glaive.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Dominance Ice.png",
+        "suggestedSlug":  "dominance_ice.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Dreadnaught Armor.png",
+        "suggestedSlug":  "dreadnaught_armor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Elegant Gem.png",
+        "suggestedSlug":  "elegant_gem.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Enchanted Talisman.png",
+        "suggestedSlug":  "enchanted_talisman.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Encourage.png",
+        "suggestedSlug":  "encourage.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Endless Battle.png",
+        "suggestedSlug":  "endless_battle.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Execute.png",
+        "suggestedSlug":  "execute.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Exotic Veil.png",
+        "suggestedSlug":  "exotic_veil.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Expert Gloves.png",
+        "suggestedSlug":  "expert_gloves.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Favor.png",
+        "suggestedSlug":  "favor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Feather of Heaven.png",
+        "suggestedSlug":  "feather_of_heaven.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Flame Retribution.png",
+        "suggestedSlug":  "flame_retribution.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Flameshot.png",
+        "suggestedSlug":  "flameshot.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Flask of the Oasis.png",
+        "suggestedSlug":  "flask_of_the_oasis.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Fleeting Time.png",
+        "suggestedSlug":  "fleeting_time.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Flicker.png",
+        "suggestedSlug":  "flicker.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Flower of Hope.png",
+        "suggestedSlug":  "flower_of_hope.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Fury Hammer.png",
+        "suggestedSlug":  "fury_hammer.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Genius Wand.png",
+        "suggestedSlug":  "genius_wand.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Glowing Wand.png",
+        "suggestedSlug":  "glowing_wand.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Golden Staff.png",
+        "suggestedSlug":  "golden_staff.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Great Dragon Spear.png",
+        "suggestedSlug":  "great_dragon_spear.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Guardian Helmet.png",
+        "suggestedSlug":  "guardian_helmet.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Haass Claws.png",
+        "suggestedSlug":  "haass_claws.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Healing Necklace.png",
+        "suggestedSlug":  "healing_necklace.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Heros Ring.png",
+        "suggestedSlug":  "heros_ring.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Holy Crystal.png",
+        "suggestedSlug":  "holy_crystal.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Hunter Strike.png",
+        "suggestedSlug":  "hunter_strike.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Ice Queen Wand.png",
+        "suggestedSlug":  "ice_queen_wand.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Ice Retribution.png",
+        "suggestedSlug":  "ice_retribution.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Immortality.png",
+        "suggestedSlug":  "immortality.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Inspire.png",
+        "suggestedSlug":  "inspire.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Iron Hunting Bow.png",
+        "suggestedSlug":  "iron_hunting_bow.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Javelin.png",
+        "suggestedSlug":  "javelin.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Knife.png",
+        "suggestedSlug":  "knife.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Lantern of Hope.png",
+        "suggestedSlug":  "lantern_of_hope.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Leather Jerkin.png",
+        "suggestedSlug":  "leather_jerkin.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Legion Sword.png",
+        "suggestedSlug":  "legion_sword.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Lightning Truncheon.png",
+        "suggestedSlug":  "lightning_truncheon.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Blade.png",
+        "suggestedSlug":  "magic_blade.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Necklace.png",
+        "suggestedSlug":  "magic_necklace.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Potion.png",
+        "suggestedSlug":  "magic_potion.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Resist Cloak.png",
+        "suggestedSlug":  "magic_resist_cloak.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Shoes.png",
+        "suggestedSlug":  "magic_shoes.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Magic Wand.png",
+        "suggestedSlug":  "magic_wand.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Malefic Gun.png",
+        "suggestedSlug":  "malefic_gun.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Malefic Roar.png",
+        "suggestedSlug":  "malefic_roar.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Molten Essence.png",
+        "suggestedSlug":  "molten_essence.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Mystery Codex.png",
+        "suggestedSlug":  "mystery_codex.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Mystic Container.png",
+        "suggestedSlug":  "mystic_container.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Ogre Tomahawk.png",
+        "suggestedSlug":  "ogre_tomahawk.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Oracle.png",
+        "suggestedSlug":  "oracle.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Petrify.png",
+        "suggestedSlug":  "petrify.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Power Crystal.png",
+        "suggestedSlug":  "power_crystal.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Power Potion.png",
+        "suggestedSlug":  "power_potion.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Purify.png",
+        "suggestedSlug":  "purify.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Queens Wings.png",
+        "suggestedSlug":  "queens_wings.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Radiant Armor.png",
+        "suggestedSlug":  "radiant_armor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Rapid Boots.png",
+        "suggestedSlug":  "rapid_boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Regular Spear.png",
+        "suggestedSlug":  "regular_spear.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Retribution.png",
+        "suggestedSlug":  "retribution.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Revitalize.png",
+        "suggestedSlug":  "revitalize.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Rock Potion.png",
+        "suggestedSlug":  "rock_potion.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Rogue Meteor.png",
+        "suggestedSlug":  "rogue_meteor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Rose Gold Meteor.png",
+        "suggestedSlug":  "rose_gold_meteor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Sea Halberd.png",
+        "suggestedSlug":  "sea_halberd.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Silence Robe.png",
+        "suggestedSlug":  "silence_robe.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Sky Piercer.png",
+        "suggestedSlug":  "sky_piercer.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Sprint.png",
+        "suggestedSlug":  "sprint.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Starlium Scythe.png",
+        "suggestedSlug":  "starlium_scythe.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Steel Legplates.png",
+        "suggestedSlug":  "steel_legplates.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Swift Boots.png",
+        "suggestedSlug":  "swift_boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Swift Crossbow.png",
+        "suggestedSlug":  "swift_crossbow.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Throw Forbidden.png",
+        "suggestedSlug":  "throw_forbidden.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Thunder Belt.png",
+        "suggestedSlug":  "thunder_belt.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Tome of Evil.png",
+        "suggestedSlug":  "tome_of_evil.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Tough Boots.png",
+        "suggestedSlug":  "tough_boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Twilight Armor.png",
+        "suggestedSlug":  "twilight_armor.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Vampire Mallet.png",
+        "suggestedSlug":  "vampire_mallet.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Vengeance.png",
+        "suggestedSlug":  "vengeance.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Vitality Crystal.png",
+        "suggestedSlug":  "vitality_crystal.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\War Axe.png",
+        "suggestedSlug":  "war_axe.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Warrior Boots.png",
+        "suggestedSlug":  "warrior_boots.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Wind of Nature.png",
+        "suggestedSlug":  "wind_of_nature.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Windtalker.png",
+        "suggestedSlug":  "windtalker.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Winter Crown.png",
+        "suggestedSlug":  "winter_crown.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Winter Truncheon.png",
+        "suggestedSlug":  "winter_truncheon.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Itemandspell\\Wishing Lantern.png",
+        "suggestedSlug":  "wishing_lantern.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\lane\\None.png",
+        "suggestedSlug":  "none.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\map\\Broken Wall.png",
+        "suggestedSlug":  "broken_wall.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\map\\Dangereous Grass.png",
+        "suggestedSlug":  "dangereous_grass.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\map\\Expanding River.png",
+        "suggestedSlug":  "expanding_river.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\map\\Flying Cloud.png",
+        "suggestedSlug":  "flying_cloud.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\nationalflag\\FalseLogoWhite.png",
+        "suggestedSlug":  "falselogowhite.png",
+        "collisionWith":  [
+                              "Assets\\costum\\Theme\\FalseLogoWhite.png",
+                              "Assets\\Other\\FalseLogoWhite.png"
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Other\\FalseLogoWhite.png",
+        "suggestedSlug":  "falselogowhite.png",
+        "collisionWith":  [
+                              "Assets\\costum\\Theme\\FalseLogoWhite.png",
+                              "Assets\\nationalflag\\FalseLogoWhite.png"
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Other\\OVERLAYTOOLLOGO.png",
+        "suggestedSlug":  "overlaytoollogo.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\Other\\Scoreboardocr.png",
+        "suggestedSlug":  "scoreboardocr.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\player\\OP4NN.png",
+        "suggestedSlug":  "op4nn.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\player\\RoBlox.png",
+        "suggestedSlug":  "roblox.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\player\\VII.png",
+        "suggestedSlug":  "vii.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Builds.html.png",
+        "suggestedSlug":  "builds_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Display2.html.png",
+        "suggestedSlug":  "display2_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Notifcontrol.html.png",
+        "suggestedSlug":  "notifcontrol_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Notifdisplay.html.png",
+        "suggestedSlug":  "notifdisplay_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Postdraft.html.png",
+        "suggestedSlug":  "postdraft_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Postgamecontrol.html.png",
+        "suggestedSlug":  "postgamecontrol_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Schedulecontrol.html.png",
+        "suggestedSlug":  "schedulecontrol_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Scheduledisplay.html.png",
+        "suggestedSlug":  "scheduledisplay_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Scoreboard.html.png",
+        "suggestedSlug":  "scoreboard_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\screenshots\\Scoreboardocr.html.png",
+        "suggestedSlug":  "scoreboardocr_html.png",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\VoiceLines\\Change.ogg",
+        "suggestedSlug":  "change.ogg",
+        "collisionWith":  [
+
+                          ]
+    },
+    {
+        "relativePath":  "Assets\\VoiceLines\\Masha.ogg",
+        "suggestedSlug":  "masha.ogg",
+        "collisionWith":  [
+
+                          ]
+    }
+]
