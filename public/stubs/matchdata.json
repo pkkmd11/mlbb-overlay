@@ -1,0 +1,187 @@
+{
+  "game_number": 1,
+  "game_duration": "15:45",
+  "winmatches": "blue",
+  "teamdata": {
+    "blueteam": {
+      "teamname": "Blue Sample",
+      "score": 1,
+      "totalgold": 45210,
+      "turret": 8,
+      "lord": 2,
+      "turtle": 3,
+      "playerlist": [
+        {
+          "name": "BlueOne",
+          "hero": "akai",
+          "level": 15,
+          "KDA": "5/1/8",
+          "gold": 9280,
+          "spell": "Flicker",
+          "itemlist": [
+            "Berserkers Fury",
+            "Blade Armor",
+            "Dominance Ice",
+            "Immortality",
+            "Athenas Shield",
+            "Azure Blade"
+          ]
+        },
+        {
+          "name": "BlueTwo",
+          "hero": "beatrix",
+          "level": 15,
+          "KDA": "10/2/5",
+          "gold": 10480,
+          "spell": "Sprint",
+          "itemlist": [
+            "Scarlet Phantom",
+            "Malefic Roar",
+            "Blade of Despair",
+            "Windtalker",
+            "Endless Battle",
+            "Immortality"
+          ]
+        },
+        {
+          "name": "BlueThree",
+          "hero": "diggie",
+          "level": 13,
+          "KDA": "1/3/15",
+          "gold": 7850,
+          "spell": "Revitalize",
+          "itemlist": [
+            "Dominance Ice",
+            "Enchanted Talisman",
+            "Immortality",
+            "Fleeting Time",
+            "Oracle",
+            "Athenas Shield"
+          ]
+        },
+        {
+          "name": "BlueFour",
+          "hero": "fredrin",
+          "level": 14,
+          "KDA": "3/2/11",
+          "gold": 8460,
+          "spell": "Vengeance",
+          "itemlist": [
+            "Antique Cuirass",
+            "Guardian Helmet",
+            "Blade Armor",
+            "Radiant Armor",
+            "Dominance Ice",
+            "Immortality"
+          ]
+        },
+        {
+          "name": "BlueFive",
+          "hero": "harith",
+          "level": 15,
+          "KDA": "8/1/9",
+          "gold": 9140,
+          "spell": "Retribution",
+          "itemlist": [
+            "Feather of Heaven",
+            "Calamity Reaper",
+            "Holy Crystal",
+            "Divine Glaive",
+            "Genius Wand",
+            "Immortality"
+          ]
+        }
+      ]
+    },
+    "redteam": {
+      "teamname": "Red Sample",
+      "score": 0,
+      "totalgold": 42135,
+      "turret": 4,
+      "lord": 0,
+      "turtle": 1,
+      "playerlist": [
+        {
+          "name": "RedOne",
+          "hero": "akai",
+          "level": 14,
+          "KDA": "2/4/6",
+          "gold": 8120,
+          "spell": "Flicker",
+          "itemlist": [
+            "Athenas Shield",
+            "Blade Armor",
+            "Dominance Ice",
+            "Oracle",
+            "Antique Cuirass",
+            "Immortality"
+          ]
+        },
+        {
+          "name": "RedTwo",
+          "hero": "wanwan",
+          "level": 15,
+          "KDA": "6/4/4",
+          "gold": 9860,
+          "spell": "Purify",
+          "itemlist": [
+            "Windtalker",
+            "Corrosion Scythe",
+            "Demon Hunter Sword",
+            "Malefic Roar",
+            "Blade of Despair",
+            "Immortality"
+          ]
+        },
+        {
+          "name": "RedThree",
+          "hero": "estes",
+          "level": 13,
+          "KDA": "1/5/10",
+          "gold": 7325,
+          "spell": "Revitalize",
+          "itemlist": [
+            "Fleeting Time",
+            "Dominance Ice",
+            "Immortality",
+            "Enchanted Talisman",
+            "Antique Cuirass",
+            "Athenas Shield"
+          ]
+        },
+        {
+          "name": "RedFour",
+          "hero": "terizla",
+          "level": 14,
+          "KDA": "4/6/5",
+          "gold": 8090,
+          "spell": "Vengeance",
+          "itemlist": [
+            "Bloodlust Axe",
+            "War Axe",
+            "Dominance Ice",
+            "Oracle",
+            "Immortality",
+            "Guardian Helmet"
+          ]
+        },
+        {
+          "name": "RedFive",
+          "hero": "harley",
+          "level": 15,
+          "KDA": "7/3/6",
+          "gold": 9740,
+          "spell": "Retribution",
+          "itemlist": [
+            "Clock of Destiny",
+            "Lightning Truncheon",
+            "Holy Crystal",
+            "Divine Glaive",
+            "Genius Wand",
+            "Immortality"
+          ]
+        }
+      ]
+    }
+  }
+}

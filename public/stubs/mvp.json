@@ -1,0 +1,21 @@
+{
+  "mvp": {
+    "checkboxId": "mvp-blueteam-1",
+    "side": "blue",
+    "nickname": "BlueTwo",
+    "heroImg": "Assets/HeroPick/beatrix.png",
+    "playerPhoto": "Assets/player/BlueTwo.png",
+    "stats": {
+      "LVL": 15,
+      "KDA": "10/2/5",
+      "GOLD": 10480,
+      "SPELL": "Sprint",
+      "ITEM 1": "Scarlet Phantom",
+      "ITEM 2": "Malefic Roar",
+      "ITEM 3": "Blade of Despair",
+      "ITEM 4": "Windtalker",
+      "ITEM 5": "Endless Battle",
+      "ITEM 6": "Immortality"
+    }
+  }
+}

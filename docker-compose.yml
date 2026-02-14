@@ -1,0 +1,15 @@
+services:
+  false-mlbb-overlay:
+    build: .
+    image: false-mlbb-overlay:4.2
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    volumes:
+      # Persist runtime JSON state and archives
+      - ./public/database:/app/public/database
+      # Persist uploaded theme assets + theme.json
+      - ./public/Assets/costum/Theme:/app/public/Assets/costum/Theme
+      # Persist uploaded/managed flags
+      - ./public/Assets/nationalflag:/app/public/Assets/nationalflag
+

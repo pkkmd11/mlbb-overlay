@@ -1,0 +1,80 @@
+{
+  "draftdata": {
+    "timer": "60",
+    "timerRunning": false,
+    "current_phase": 9,
+    "blueside": {
+      "ban": [
+        {
+          "hero": "/Assets/HeroPick/alucard.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/wanwan.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/novaria.png"
+        },
+        {
+          "hero": ""
+        },
+        {
+          "hero": ""
+        }
+      ],
+      "pick": [
+        {
+          "hero": "/Assets/HeroPick/saber.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/xavier.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/barats.png"
+        },
+        {
+          "hero": ""
+        },
+        {
+          "hero": ""
+        }
+      ]
+    },
+    "redside": {
+      "ban": [
+        {
+          "hero": "/Assets/HeroPick/argus.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/zetian.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/barats.png"
+        },
+        {
+          "hero": ""
+        },
+        {
+          "hero": ""
+        }
+      ],
+      "pick": [
+        {
+          "hero": "/Assets/HeroPick/franco.png"
+        },
+        {
+          "hero": "/Assets/HeroPick/moskov.png"
+        },
+        {
+          "hero": ""
+        },
+        {
+          "hero": ""
+        },
+        {
+          "hero": ""
+        }
+      ]
+    },
+    "timer_running": true
+  }
+}

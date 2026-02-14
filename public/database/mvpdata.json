@@ -1,0 +1,21 @@
+{
+  "mvp": {
+    "checkboxId": "mvp-blueteam-0",
+    "side": "blue",
+    "nickname": "",
+    "heroImg": "Assets/HeroPick/Jawhead.png",
+    "playerPhoto": "Assets/player/playertemp.png",
+    "stats": {
+      "LVL": 0,
+      "KDA": "0/0/0",
+      "GOLD": 0,
+      "SPELL": "Inspire",
+      "ITEM 1": "idle",
+      "ITEM 2": "idle",
+      "ITEM 3": "idle",
+      "ITEM 4": "idle",
+      "ITEM 5": "idle",
+      "ITEM 6": "idle"
+    }
+  }
+}
