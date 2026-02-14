@@ -377,7 +377,28 @@
         function handleAssetError(assetType, assetName, imgEl, fallbackSrc = null) {
             const assetLabel = assetName ? `'${assetName}'` : '(unnamed asset)';
             const attemptedSrc = imgEl && imgEl.src ? imgEl.src : 'unknown source';
+            const dataPath = imgEl && imgEl.dataset && imgEl.dataset.assetPath ? imgEl.dataset.assetPath : 'unknown dataset path';
+            console.groupCollapsed(`[AssetDiagnostics] ${assetType} asset ${assetLabel} failed to load`);
             console.warn(`[AssetMissing] ${assetType} asset ${assetLabel} failed to load from ${attemptedSrc}`);
+            console.info('[AssetDiagnostics] dataset.assetPath:', dataPath);
+            if (assetName && assetName !== assetName.toLowerCase()) {
+                console.info('[AssetCaseHint] Detected uppercase characters in requested asset key. Linux filesystems are case-sensitive.');
+            }
+            if (assetName && /[\s']/g.test(assetName)) {
+                console.info('[AssetCharacterHint] Asset key contains spaces or apostrophes. Verify on-disk filename matches slugified version.');
+            }
+            if (dataPath.includes(' ')) {
+                console.info('[AssetSpaceHint] Requested asset path includes literal spaces. Confirm actual filename encoding (space vs underscore).');
+            }
+            if (assetName) {
+                const slugSuggestion = assetName
+                    .normalize('NFKD')
+                    .replace(/['\s]/g, match => match === ' ' ? '_' : '')
+                    .replace(/[^a-zA-Z0-9_]/g, '')
+                    .toLowerCase();
+                console.info('[AssetSlugSuggestion] Suggested slug for Linux-safe filename:', `${slugSuggestion || 'unnamed'}.png`);
+            }
+            console.groupEnd();
             if (fallbackSrc && imgEl) {
                 console.info(`[AssetFallback] Switching ${assetType} asset ${assetLabel} to ${fallbackSrc}`);
                 imgEl.onerror = null;
@@ -547,7 +568,7 @@
                 tr.innerHTML = `
                     <td>
                         <div class="hero-display">
-                            <img src="${heroSrc}" class="hero-img" data-asset-name="${p.hero || 'idle'}" onerror="handleAssetError('hero', this.dataset.assetName, this, 'Assets/HeroPick/idle.png')">
+                            <img src="${heroSrc}" class="hero-img" data-asset-name="${p.hero || 'idle'}" data-asset-path="${heroSrc}" onerror="handleAssetError('hero', this.dataset.assetName, this, 'Assets/HeroPick/idle.png')">
                             <span class="player-name">${p.name || 'Player '+(index+1)}</span>
                         </div>
                     </td>
@@ -558,7 +579,7 @@
                     <td>
                         <div style="display:flex; justify-content:center;">
                             <div class="item-slot" onclick="openModal('${teamKey}', ${index}, 'spell')">
-                                 <img src="Assets/Itemandspell/${p.spell || 'Execute'}.png" data-asset-name="${p.spell || 'Execute'}" onerror="handleAssetError('spell', this.dataset.assetName, this)">
+                             <img src="Assets/Itemandspell/${p.spell || 'Execute'}.png" data-asset-name="${p.spell || 'Execute'}" data-asset-path="Assets/Itemandspell/${p.spell || 'Execute'}.png" onerror="handleAssetError('spell', this.dataset.assetName, this)">
                             </div>
                         </div>
                     </td>
@@ -569,7 +590,7 @@
                                 <div class="item-slot ${!item || item === 'idle' ? 'empty-slot' : ''}" 
                                      onclick="openModal('${teamKey}', ${index}, 'item', ${iSlot})"
                                      title="${item}">
-                                     <img src="Assets/Itemandspell/${item}.png" data-asset-name="${item}" onerror="handleAssetError('item', this.dataset.assetName, this)">
+                                     <img src="Assets/Itemandspell/${item}.png" data-asset-name="${item}" data-asset-path="Assets/Itemandspell/${item}.png" onerror="handleAssetError('item', this.dataset.assetName, this)">
                                 </div>
                             `).join('')}
                         </div>
